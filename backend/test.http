@@ -1,0 +1,56 @@
+###Teste criar usuario
+
+POST http://localhost:3000/funcionario
+Content-Type: application/json
+
+{
+"nome":"ana",
+"email":"ana@gmail.com",
+"senha":"ana123"
+}
+
+###
+POST http://localhost:3000/funcionario
+Content-Type: application/json
+
+{
+"nome":"eliel",
+"email":"eliel@gmail.com",
+"senha":"eliel123"
+}
+
+
+### Equipamento
+POST http://localhost:3000/equipamento
+Content-Type: application/json
+
+{
+"marca":"xbox",
+"modelo":"PENDENTE",
+"numeroSerie":"123456",
+"idCliente":"1"
+}
+
+### Cliente
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+"codCliente":"1",
+"nome":"mario",
+"email":"mario@gmail.com",
+"senha":"123456",
+"cpf":"11122233344",
+"telefone":"11122233344",
+"endereco":"Casa amarela"
+}
+
+### Inspeção
+POST http://localhost:3000/inspecao
+Content-Type: application/json
+
+{
+"data":"12/12/2012",
+"status":"PENDENTE",
+"idEquipamento": 1
+}
